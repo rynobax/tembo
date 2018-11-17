@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "module": "es2015",
-    "outDir": "build/dist",
-    "sourceMap": true,
-    "experimentalDecorators": true,
-    "jsx": "react-native",
-    "lib": ["dom", "es2015", "es2016"],
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
-    "noEmitHelpers": true,
-    "importHelpers": true,
+    "module": "commonjs",
+    "lib": ["es2015"],
+    "jsx": "react",
     "strict": true,
-    "noImplicitReturns": true
-  }
+    "noImplicitAny": true,
+    "types": ["jest"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "baseUrl": "src/",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "exclude": ["index.js", "android", "ios", "build", "node_modules", ".coverage", "native-assets", "jest"]
 }
